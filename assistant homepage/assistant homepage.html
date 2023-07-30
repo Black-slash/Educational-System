@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assistant homepage.css" />
+
+    <title>Assistant HomePage</title>
+  </head>
+
+  <body>
+    <div class="containerr">
+      <nav class="top-bar">
+        <h1 id="Home">Home</h1>
+        <div id="profile" class="profile-select">
+          <i class="fa-solid fa-user-circle"></i>
+          <select id="profile-select">
+            <option value="profile" hidden>Profile</option>
+            <option value="Logout">Logout</option>
+          </select>
+        </div>
+      </nav>
+
+      <div class="options">
+        <button class="button1" role="button">Start Session</button
+        ><br /><br /><br />
+        <button class="button1" role="button">Edit Student</button
+        ><br /><br /><br />
+        <button class="button1" role="button">Daily Report</button><br />
+      </div>
+      <div class="bottom">
+        <button
+          class="button"
+          role="button"
+          style="transform: translateX(780px); display: flex"
+        >
+          Quiz
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 65 61"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect width="65" height="61" fill="url(#pattern0)" />
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_961_255"
+                  transform="scale(0.015961 0.015625)"
+                />
+              </pattern>
+              <image
+                id="image0_961_255"
+                width="64"
+                height="64"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+          </svg>
+        </button>
+
+        <button
+          class="button"
+          style="display: flex; transform: translateX(250px)"
+        >
+          Homework
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 65 61"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect width="65" height="61" fill="url(#pattern0)" />
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_961_255"
+                  transform="scale(0.015961 0.015625)"
+                />
+              </pattern>
+              <image
+                id="image0_961_255"
+                width="64"
+                height="64"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
